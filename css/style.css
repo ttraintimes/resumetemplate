@@ -45,29 +45,29 @@
 
  a {
     cursor: pointer;
-    color: #1abc9c;
+    color: #d3c17e;
     text-decoration: none;
  }
 
  a:hover {
     text-decoration:none;
-    color: #1abc9c;
+    color: #d3c17e;
     opacity: 0.9;
  }
 
  hr {
-    border-top: 5px solid #1abc9c;
+    border-top: 5px solid #d3c17e;
     width: 80px;
     padding-bottom: 20px;
  }
 
 
  .colour-splash {
-    color: #1abc9c;
+    color: #d3c17e;
  }
 
  .section-primary span {
-    color: #1abc9c;
+    color: #d3c17e;
     font-weight: bolder;
     opacity: 1;
  }
@@ -83,7 +83,7 @@
  * =================================================================== */
 
  .section-image {
- 	background: #151515 url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=1199&h=799&q=80) no-repeat center center;
+ 	background: #151515 url("../../images/bg.JPG");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -106,17 +106,20 @@
  }
 
  .intro {
+    width: 100%;
+    position: absolute;
     vertical-align: middle;
     text-align: center;
     display:table-cell;
     -webkit-transform: translateY(-2.1rem);
     -ms-transform: translateY(-2.1rem);
-    transform: translateY(-2.1rem);
+    transform: translateY(2.1rem);
 }
 
 .intro .row {
     margin-right: 0;
     margin-left:0;
+    margin-top: 80px;
 }
 
 .intro h1 {
@@ -124,8 +127,8 @@
 }
 
 .intro h5 {
-    color: #1abc9c;
-    font-size: 2.3rem;
+    color: #d3c17e;
+    font-size: 2.0rem;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -148,6 +151,52 @@
     opacity: 0.9;
 }
 
+.nav-menu {
+    margin-top: -30px;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu li + li {
+    margin-left: 10px;
+  }
+  
+  .nav-menu a {
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+  }
+  
+  .nav-menu a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #cc9f6f;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+    visibility: visible;
+    width: 15px;
+  }
+  
+  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #ffd0a1;
+    text-decoration: none;
+  }
 
 
 /* 03. Social Icons
@@ -211,11 +260,11 @@ section {
 }
 
 .section-primary {
-    border: #1abc9c;
+    border: #d3c17e;
 }
 
 .section-colour {
-    background-color: #1abc9c;
+    background-color: #d3c17e;
     color: #fff;
 }
 
@@ -385,9 +434,9 @@ footer p {
     }
 
     #skills {
-        background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+     
+        background-image: url("../../images/bg.JPG");
         background-position: top center;
-
     }
 }
 
